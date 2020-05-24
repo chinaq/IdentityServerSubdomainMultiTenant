@@ -3,7 +3,7 @@ appsettings.json
 tempkey.rsa
 /Migrations
 .vscode/
-
+identityserver4_log.txt
 
 
 
