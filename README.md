@@ -18,6 +18,7 @@ To run this application follow the points belows :
 2. Make the required changes to the database seed in IdentityServerDbcontext and ConfigurationDbContext. You need to give your client
 configuration as per your requirement.
 3. Run the migrations for IdentityServerDbContext and ConfigurationDbContext and update database.
+4. Add the TenantId to the AspNetUsers table.
 
 ## In API ##
 1.Add appsettings.json file with following settings :
