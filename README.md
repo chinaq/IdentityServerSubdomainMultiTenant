@@ -29,5 +29,5 @@ configuration as per your requirement.
 ## In Angular Client ##
 1. Make changes to the client config in app.module.ts as per your requirement.
 
-
+Finally run the applications with multiple bindings.
 
