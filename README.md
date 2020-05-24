@@ -21,12 +21,11 @@ configuration as per your requirement.
 
 ## In API ##
 1.Add appsettings.json file with following settings :
-        "AuthorizationServerUrls": {
-
+        
+            "AuthorizationServerUrls": {   
             "AuthorityDomain": "lalita.com:5000",
-            "AuthorityScheme": "http"
+            "AuthorityScheme": "http" }
 
-          }
 ## In Angular Client ##
 1. Make changes to the client config in app.module.ts as per your requirement.
 
