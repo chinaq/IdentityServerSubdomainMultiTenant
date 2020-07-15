@@ -5,8 +5,6 @@ import { RouterModule } from '@angular/router';
 import { AuthModule, OidcConfigService } from 'angular-auth-oidc-client';
 import { AppComponent } from './app.component';
 import { CustomInterceptor } from './custom-interceptor';
-import { TestComponent } from './test/test.component';
-import { UsersComponent } from './users/users.component';
 import { AuthorizationGuard } from './authorization-guard.service';
 import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -31,7 +29,7 @@ export function configureAuth(oidcConfigService: OidcConfigService) {
 
 
 @NgModule({
-    declarations: [AppComponent,TestComponent, UsersComponent],
+    declarations: [AppComponent],
     imports: [
 
         BrowserModule,
@@ -43,14 +41,6 @@ export function configureAuth(oidcConfigService: OidcConfigService) {
             { path: 'home', component: AppComponent },
             { path: 'forbidden', component: AppComponent },
             { path: 'unauthorized', component: AppComponent },
-            { path: 'test', component: TestComponent },
-            { path: 'users', 
-                component: UsersComponent,
-                canActivate:[AuthorizationGuard],
-                data: { 
-                roles: 'SuperAdmin'
-              }  
-            },
         ]),
         AuthModule.forRoot(),
 
