@@ -14,7 +14,7 @@ To run this application follow the points belows :
 
 ## In Authorization Project ##
 
-1. Add ConnectionString in your appsettings.json file with "DefaultConnection" connection string to your database.
+1. Add ConnectionString in your appsettings.json file with "DefaultConnection" connection to your database.
 2. Make the required changes to the database seed in IdentityDbcontext and ConfigurationDbContext. You need to give your client
 configuration as per your requirement.
 3. Run the migrations for IdentityDbContext, PersistedGrantDbContext and ConfigurationDbContext and update database.
